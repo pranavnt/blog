@@ -5,6 +5,8 @@ import ArticleBlock from "../components/ArticleBlock.js";
 import postsJSON from "./postsJSON.js";
 
 export default function Home() {
+  var articleArr = postsJSON.posts;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,18 +19,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div id="articles">
-        <ArticleBlock
-          title="Welcome to my blog!"
-          description="This is my first blog post!"
-          date="Dec 25, 2020"
-        />
-        <ArticleBlock
-          title="Welcome to my blog!"
-          description="This is my first blog post!"
-          date="Dec 25, 2020"
-        />
-      </div>
+      <div id="articles">{articles}</div>
 
       <footer className={styles.footer}>
         <a
