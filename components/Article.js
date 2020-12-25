@@ -5,11 +5,9 @@ export default function Article(props) {
   axios
     .get(props.link)
     .then((response) => {
-      var md = response.data;
+      return <ReactMarkdown children={response.data} allowDangerousHtml />;
     })
     .catch((error) => {
       console.log(error);
     });
-
-  return <ReactMarkdown children={md} allowDangerousHtml />;
 }
