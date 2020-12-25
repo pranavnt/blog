@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import ArticleBlock from "../components/ArticleBlock.js";
 
 export default function Home() {
   return (
@@ -8,6 +9,19 @@ export default function Home() {
         <title>Blog | pt5.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div style={{}}>
+        <h1 style={{ fontSize: "50px", borderBottom: "1px solid #eaeaea" }}>
+          Blog
+        </h1>
+      </div>
+
+      <div>
+        <ArticleBlock
+          title="Welcome to my blog!"
+          description="This is my first blog post!"
+          date="Dec 25, 2020"
+        />
+      </div>
 
       <footer className={styles.footer}>
         <a
