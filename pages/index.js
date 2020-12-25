@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+
 import ArticleBlock from "../components/ArticleBlock.js";
+import postsJSON from "./postsJSON.js";
 
 export default function Home() {
   return (
