@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Router, { withRouter } from "next/router";
 
 import styles from "../styles/Home.module.css";
 

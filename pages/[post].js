@@ -1,10 +1,6 @@
 import axios from "axios";
-import { useRouter } from "next/router";
-// import ReactMarkdown from "react-markdown";
 import MarkdownRenderer from "react-markdown-renderer";
-
 import styles from "../styles/Home.module.css";
-
 import postsJSON from "./postsJSON.js";
 
 var markdown;
@@ -31,8 +27,9 @@ Post.getInitialProps = async (ctx) => {
       await axios(link).then((response) => {
         markdown = response.data;
       });
-      break;
+
+      return { md: markdown };
     }
   }
-  return { md: markdown };
+  return { md: "Page not found" };
 };
