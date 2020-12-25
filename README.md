@@ -1,6 +1,7 @@
-# BlogDown
-
-### A minimalistic markdown blog built in Next.js
+<div align="center">
+    <h1>BlogDown</h1>
+    <h3>A minimalistic markdown blog built in Next.js</h3>
+</div>
 
 ### Setup:
 
