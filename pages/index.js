@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+import Router, { withRouter } from "next/router";
 
 import styles from "../styles/Home.module.css";
 
@@ -17,6 +17,7 @@ export default function Home() {
         title={articleArr[i].title}
         description={articleArr[i].description}
         date={articleArr[i].date}
+        rout={}
         link={articleArr[i].link}
       />
     );
