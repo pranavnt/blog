@@ -5,37 +5,32 @@ import MarkdownRenderer from "react-markdown-renderer";
 
 import postsJSON from "./postsJSON.js";
 
-let markdown;
+var markdown;
 
-export default function Post() {
-  const router = useRouter();
+export default function Post({ md }) {
+  return (
+    <div>
+      <MarkdownRenderer markdown={md} />
+    </div>
+  );
+}
 
-  const postRoute = router.query["post"];
+Post.getInitialProps = async (ctx) => {
+  var postRoute = ctx.query.post;
 
   var articleArr = postsJSON.posts;
 
   for (var i = 0; i < articleArr.length; i++) {
-    console.log(i);
-    console.log("/" + postRoute);
-    console.log(articleArr[i].route);
-    if (articleArr[i].route == "/" + postRoute) {
+    if (articleArr[i].route == postRoute) {
       var link = articleArr[i].link;
+
       console.log(link);
 
-      axios(link).then((response) => {
+      await axios(link).then((response) => {
         markdown = response.data;
-        console.log(markdown);
       });
-
       break;
     }
   }
-
-  console.log(markdown);
-
-  return (
-    <div>
-      <MarkdownRenderer markdown={markdown} />
-    </div>
-  );
-}
+  return { md: markdown };
+};
