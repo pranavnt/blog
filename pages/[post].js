@@ -1,7 +1,7 @@
 import axios from "axios";
 import MarkdownRenderer from "react-markdown-renderer";
 import styles from "../styles/Home.module.css";
-import postsJSON from "./postsJSON.js";
+import postsJSON from "../postsJSON.js";
 
 var markdown;
 
