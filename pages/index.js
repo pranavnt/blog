@@ -15,7 +15,12 @@ export default function Home() {
         </h1>
       </div>
 
-      <div>
+      <div id="articles">
+        <ArticleBlock
+          title="Welcome to my blog!"
+          description="This is my first blog post!"
+          date="Dec 25, 2020"
+        />
         <ArticleBlock
           title="Welcome to my blog!"
           description="This is my first blog post!"
