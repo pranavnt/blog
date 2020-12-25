@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import ArticleBlock from "../components/ArticleBlock.js";
-import postsJSON from "../postsJSON.js";
+import postsJSON from "../posts.js";
 
 export default function Home() {
   var articles = [];
@@ -29,12 +29,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1 style={{ fontSize: "50px", borderBottom: "1px solid #eaeaea" }}>
+        <h1 style={{ fontSize: "50px", borderBottom: "1px solid #BBBBBB" }}>
           Blog
         </h1>
+        <div id="articles">{articles}</div>
       </div>
-
-      <div id="articles">{articles}</div>
 
       <footer className={styles.footer}>
         <a

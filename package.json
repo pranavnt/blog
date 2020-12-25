@@ -12,7 +12,6 @@
     "next": "10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-markdown": "^5.0.3",
     "react-markdown-renderer": "^1.4.0"
   }
 }

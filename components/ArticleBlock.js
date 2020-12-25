@@ -4,7 +4,7 @@ export default function ArticleBlock(props) {
   return (
     <div
       className={styles.ArticleBlock}
-      style={{ borderBottom: "1px solid #eaeaea" }}
+      style={{ borderBottom: "1px solid #dddddd" }}
     >
       <a href={props.route}>
         <div>
