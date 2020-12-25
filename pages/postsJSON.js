@@ -5,7 +5,7 @@ const postsJSON = {
       description: "Merry Christmas!",
       date: "Dec 25, 2020",
       link:
-        "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25%20Merry%20Christmas!.md",
+        "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-merry-christmas.md",
     },
     {
       title: "Welcome to my blog!",
@@ -13,7 +13,7 @@ const postsJSON = {
         "Hello world! Welcome to my blog, where I'll write about a bunch of random stuff",
       date: "Dec 25, 2020",
       link:
-        "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-merry-christmas.md",
+        "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-welcome-to-my-blog.md",
     },
   ],
 };

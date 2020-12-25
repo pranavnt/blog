@@ -5,7 +5,20 @@ import ArticleBlock from "../components/ArticleBlock.js";
 import postsJSON from "./postsJSON.js";
 
 export default function Home() {
+  var articles = [];
+
   var articleArr = postsJSON.posts;
+
+  for (var i = 0; i < articleArr.length; i++) {
+    articles.push(
+      <ArticleBlock
+        title={articleArr[i].title}
+        description={articleArr[i].description}
+        date={articleArr[i].date}
+        link={articleArr[i].link}
+      />
+    );
+  }
 
   return (
     <div className={styles.container}>
