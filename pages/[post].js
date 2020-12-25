@@ -1,24 +1,39 @@
 import axios from "axios";
 import { useRouter } from "next/router";
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
+import MarkdownRenderer from "react-markdown-renderer";
 
 import postsJSON from "./postsJSON.js";
 
-export default function Article() {
+let markdown;
+var postRoute;
+const articleArr = postsJSON.posts;
+
+export default function Post(props) {
   const router = useRouter();
-
-  const postRoute = router.query.post;
-
-  var articleArr = postsJSON.posts;
-
-  for (var i = 0; i < articleArr.length; i++) {
-    if (articleArr[i].route == postRoute) {
-      var link = articleArr[i].link;
-    }
-  }
-  return <ReactMarkdown children={getMD(link)} allowDangerousHtml />;
+  postRoute = router.query["post"];
+  return (
+    <div>
+      <MarkdownRenderer markdown={props.markdown} />
+    </div>
+  );
 }
 
-function getMD(link) {
-  return axios(link).data;
+export async function getStaticProps() {
+  for (var i = 0; i < articleArr.length; i++) {
+    if (articleArr[i].route == "/" + postRoute) {
+      var link = articleArr[i].link;
+
+      axios(link).then((response) => {
+        markdown = response.data;
+      });
+
+      break;
+    }
+  }
+  return {
+    props: {
+      markdown,
+    },
+  };
 }
