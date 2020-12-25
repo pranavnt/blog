@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.ArticleBlock {
+  border-bottom: "1px solid #dddddd";
+}
+
 .ArticleBlock:hover h2 {
   text-decoration: underline;
 }
