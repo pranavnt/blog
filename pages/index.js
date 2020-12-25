@@ -28,7 +28,7 @@ export default function Home() {
         <title>Blog | pt5.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{}}>
+      <div>
         <h1 style={{ fontSize: "50px", borderBottom: "1px solid #eaeaea" }}>
           Blog
         </h1>
