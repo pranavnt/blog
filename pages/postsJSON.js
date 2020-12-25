@@ -6,7 +6,7 @@ const postsJSON = {
       date: "Dec 25, 2020",
       link:
         "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-merry-christmas.md",
-      route: "merry-christmas",
+      route: "/merry-christmas",
     },
     {
       title: "Welcome to my blog!",

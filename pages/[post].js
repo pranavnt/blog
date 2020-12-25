@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import postsJSON from "./postsJSON.js";
 
-export default function Article(props) {
+export default function Article() {
   const router = useRouter();
 
   const postRoute = router.query.post;
@@ -16,13 +16,9 @@ export default function Article(props) {
       var link = articleArr[i].link;
     }
   }
+  return <ReactMarkdown children={getMD(link)} allowDangerousHtml />;
+}
 
-  axios
-    .get(link)
-    .then((response) => {
-      return <ReactMarkdown children={response.data} allowDangerousHtml />;
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+function getMD(link) {
+  return axios(link).data;
 }

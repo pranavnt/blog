@@ -17,7 +17,7 @@ export default function Home() {
         title={articleArr[i].title}
         description={articleArr[i].description}
         date={articleArr[i].date}
-        rout={}
+        route={articleArr[i].route}
         link={articleArr[i].link}
       />
     );
