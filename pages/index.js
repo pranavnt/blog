@@ -1,22 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import axios from "axios";
 
 import ArticleBlock from "../components/ArticleBlock.js";
 import postsJSON from "./postsJSON.js";
 
 export default function Home() {
-  axios
-    .get(
-      "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-merry-christmas.md"
-    )
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-
   var articles = [];
 
   var articleArr = postsJSON.posts;
