@@ -3,13 +3,15 @@ import { useRouter } from "next/router";
 // import ReactMarkdown from "react-markdown";
 import MarkdownRenderer from "react-markdown-renderer";
 
+import styles from "../styles/Home.module.css";
+
 import postsJSON from "./postsJSON.js";
 
 var markdown;
 
 export default function Post({ md }) {
   return (
-    <div>
+    <div className={styles.container}>
       <MarkdownRenderer markdown={md} />
     </div>
   );
