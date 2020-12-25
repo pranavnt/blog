@@ -19,6 +19,7 @@ export default function Post({ md }) {
 }
 
 Post.getInitialProps = async (ctx) => {
+  // gets route
   var postRoute = ctx.query.post;
 
   var articleArr = postsJSON.posts;
