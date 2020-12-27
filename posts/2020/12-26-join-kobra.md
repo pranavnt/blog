@@ -7,7 +7,7 @@ Kobra is an open-source visual programming language (like Scratch) for Machine L
 # Demo of MVP
 
 Here is a quick video of Kobra being used for a simple linear regression.
-![](https://ibb.co/j30swSY)
+![](https://github.com/pranavnt/blog/raw/main/posts/2020/assets/Kobra_Demo.gif)
 
 ## Tech Stack
 
