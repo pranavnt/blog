@@ -1,3 +1,0 @@
-# Merry Christmas!
-
-Test Post
