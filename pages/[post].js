@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import MarkdownRenderer from "react-markdown-renderer";
 import ReactMarkdown from "react-markdown";
 import axios from "axios";
 import postsJSON from "../posts.js";
