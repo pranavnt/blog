@@ -21,3 +21,5 @@ Here is a quick video of Kobra being used for a simple linear regression.
 2. Allow for user to upload and use their own datasets (and store them in a storage bucket)
 3. Getting project saving to fully work
 4. Integrate Blockly OOP Plugin and change ML blocks to being object oriented
+
+Note: We unfortunatly cannot pay our developers, as we have no source of revenue right now, as Kobra is free and open-source. However, we plan on raising money through GitHub sponsors or OpenCollective to reimburse our devs for the time spent on this.

@@ -13,7 +13,7 @@ export default function Post({ md }) {
         <title>Blog | pt5.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ReactMarkdown children={md} className={styles.post} />
+      <ReactMarkdown children={md} className={styles.post} allowDangerousHtml />
     </div>
   );
 }
