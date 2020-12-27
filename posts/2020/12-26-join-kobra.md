@@ -14,3 +14,10 @@ Here is a quick video of Kobra being used for a simple linear regression.
 - Next.js -- currently migrating to Next from React
 - TypeScript ❤️ (for both frontend and backend)
 - GraphQL
+
+## Technical Tasks to Work on
+
+1. Finish migrating frontend codebase to Next.js
+2. Allow for user to upload and use their own datasets (and store them in a storage bucket)
+3. Getting project saving to fully work
+4. Integrate Blockly OOP Plugin and change ML blocks to being object oriented

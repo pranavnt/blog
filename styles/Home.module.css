@@ -11,6 +11,19 @@
 .ArticleBlock {
   border-bottom: "1px solid #dddddd";
 }
+.ArticleBlock p {
+  font-size: 20px;
+}
+
+.post p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.post li {
+  line-height: 30px;
+  font-size: 20px;
+}
 
 .ArticleBlock:hover h2 {
   text-decoration: underline;
