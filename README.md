@@ -3,6 +3,8 @@
     <h3>A minimalistic markdown blog built in Next.js</h3>
 </div>
 
+add pic
+
 ### Setup:
 
 1. Fork the repository
