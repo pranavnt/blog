@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import MarkdownRenderer from "react-markdown-renderer";
+import ReactMarkdown from "react-markdown";
 import axios from "axios";
 import postsJSON from "../posts.js";
 
@@ -13,7 +14,7 @@ export default function Post({ md }) {
         <title>Blog | pt5.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MarkdownRenderer markdown={md} />
+      <ReactMarkdown children={md} />
     </div>
   );
 }
