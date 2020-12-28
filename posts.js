@@ -11,7 +11,8 @@ const postsJSON = {
     },
     {
       title: "Welcome to my blog!",
-      description: "Testing",
+      description:
+        "Welcome to my blog! Here I talk about a bit about me and what I plan on writing about here",
       date: "Dec 25, 2020",
       link:
         "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2020/12-25-welcome-to-my-blog.md",
