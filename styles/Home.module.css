@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
 }
+.container h1 {
+  border-bottom: #ff0000;
+}
 
 .ArticleBlock {
   border-bottom: "1px solid #dddddd";
