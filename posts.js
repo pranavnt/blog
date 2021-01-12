@@ -1,6 +1,15 @@
 const postsJSON = {
   posts: [
     {
+      title: "Social Progess Index vs. style of governance",
+      description:
+        "Technical post about modeling the relationship between social progress index and style of government",
+      date: "Jan 12, 2021",
+      link:
+        "https://raw.githubusercontent.com/pranavnt/blog/main/posts/2021/01-12-2021-spi-democracy-modeling.md",
+      route: "spi-democracy-modeling",
+    },
+    {
       title: "Join Kobra!",
       description:
         "Basic information about Kobra for anyone interested in contributing!",
