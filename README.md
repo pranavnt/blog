@@ -1,9 +1,8 @@
 <div align="center">
     <h1>My Blog</h1>
     <h3>A minimalistic markdown blog built in Next.js</h3>
+    <img src="https://i.ibb.co/q1r4WNB/Screen-Shot-2021-02-04-at-6-12-47-PM.png">
 </div>
-
-add pic
 
 ### Setup:
 
