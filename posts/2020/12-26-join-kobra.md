@@ -11,9 +11,10 @@ Here is a quick video of Kobra being used for a simple linear regression.
 
 ## Tech Stack
 
-- Next.js -- currently migrating to Next from React
-- TypeScript ❤️ (for both frontend and backend)
+- Next.js 
+- TypeScript
 - GraphQL
+- Prisma
 
 ## Technical Tasks to Work on
 
